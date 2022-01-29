@@ -1,0 +1,57 @@
+{
+    "questions": [
+        {
+            "question": "Which one is the big?",
+            "options": [
+                {
+                    "answar": 6,
+                    "correct": false
+                },
+                {
+                    "answar": 10,
+                    "correct": true
+                },
+                {
+                    "answar": 2,
+                    "correct": false
+                }
+            ]
+           
+           
+        },
+        {
+            "question":"Capital of India?",
+            "options": [
+                {
+                    "answar": "Mumbai",
+                    "correct": false
+                },
+                {
+                    "answar": "Delhi",
+                    "correct": true
+                },
+                {
+                    "answar": "Pune",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question":"Who is the Prime minister of India?",
+            "options": [
+                {
+                    "answar": "Narendra Modi",
+                    "correct": true
+                },
+                {
+                    "answar": "Mamta Banerjee",
+                    "correct": false
+                },
+                {
+                    "answar": "Rahul Gandhi",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

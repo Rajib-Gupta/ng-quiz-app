@@ -1,0 +1,16 @@
+<div class="container bg-ligth py-5">
+    <h1 class="display-5 fw-bold">
+        Welcome!
+    </h1>
+    <p class="col-md-8 fs-4">You have 10 questions having 5 points each.</p>
+    <h4>Rules:</h4>
+    <ol>
+        <li>You will have 15 sec for answaring each question.</li>
+        <li>For answaring worng you will be disqualified</li>
+    </ol>
+    <div class="name col-md-4 my-3">
+        <label for="name">Enter your Name:</label>
+        <input type="text" #name class="form-control" name="" id="">
+    </div>
+    <button class="byn btn-success btn-lg" routerLink="/question" (click)="submit()" >Start the Quiz</button>
+</div>
