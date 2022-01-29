@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, Output } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { NavigationStart, Router, RouterLink } from '@angular/router';
 import { interval, Subscription } from 'rxjs';
 import { QuizService } from '../service/quiz.service';
 
@@ -24,6 +24,11 @@ export class QuestionComponent implements OnInit {
   constructor(private question: QuizService, private router: Router) {}
 
   ngOnInit(): void {
+    window.addEventListener('keyup', disableF5);
+    window.addEventListener('keydown', disableF5);
+    function disableF5(e: any) {
+      if ((e.which || e.keyCode) == 116) e.preventDefault();
+    }
     this.name = localStorage.getItem('name')!;
     this.getData();
     this.timer();
